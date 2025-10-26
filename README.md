@@ -1,4 +1,3 @@
-# HashTools - Générateur et Recherche de Condensats Cryptographiques
 
 ## Description
 
@@ -16,13 +15,6 @@ Programme en C permettant de générer des condensats cryptographiques (hashes S
 # Debian/Ubuntu
 sudo apt-get update
 sudo apt-get install build-essential libssl-dev
-
-# Fedora/RHEL
-sudo dnf install gcc openssl-devel
-
-# Arch Linux
-sudo pacman -S base-devel openssl
-```
 
 ### Alternative avec Docker
 Si vous préférez utiliser Docker (voir section Docker ci-dessous).
@@ -164,4 +156,5 @@ src/
 
 Le programme utilise une table de hachage pour garantir des recherches rapides :
 - **Génération** : ~100 000 hashes/seconde (dépend du CPU)
+
 - **Recherche** : O(1) en moyenne, très rapide même avec des millions d'entrées
