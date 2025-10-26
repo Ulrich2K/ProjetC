@@ -6,6 +6,7 @@ Petit programme en C qui :
 - Permet de rechercher un mot à partir d’un condensat (`mode L`)
 
 Le condensat est un simple hash (somme des caractères modulo 10000).
+Après la compilation un exécuable nommé condensat est créé lancez le et suivez les instructions;
 
 ---
 
@@ -13,3 +14,4 @@ Le condensat est un simple hash (somme des caractères modulo 10000).
 
 ```bash
 make
+
