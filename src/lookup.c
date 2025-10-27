@@ -26,7 +26,7 @@ void mode_lookup(const char *table_file) {
         while (fgets(line, sizeof(line), ftable)) {
             if (sscanf(line, "%[^;];%u", word, &hash) == 2) {
                 if (hash == target) {
-                    printf("%u correspond a \%s\ \n", target, word);
+                    printf("%u correspond a %s \n", target, word);
                     found = 1;
                 }
             }
@@ -37,3 +37,4 @@ void mode_lookup(const char *table_file) {
 
     fclose(ftable);
 }
+
